@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-content full-bleed_secondary">
+        <span class="logo">IWMYWF</span>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/">About me</a>
+          <a href="/">Works</a>
+          <a href="/">Blog</a>
+          <button class="btn">Get in Touch</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero-section full-bleed_secondary">
+        <div class="hero-section_text">
+          <h1>
+            Create your website in <span class="text-s">less than 12days</span>
+          </h1>
+          <p>
+            Hey, I’m Mark Essein. A fullstack web developer with 7 years
+            experience building successful websites and applications. I can
+            build a high converting website for you as quick as possible!
+          </p>
+          <button class="btn">Get in Touch</button>
+        </div>
+        <div class="hero-section_man">
+          <div class="hero-img">
+            <img src="./man.png" alt="man" />
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="full-bleed_primary about-section_content">
+          <img src="./skills.png" alt="skills" />
+          <div>
+            <h2>About Me</h2>
+            <div>
+              <p>
+                My passion for building websites started since 2013 and since
+                then i have helped companies around the world build amazing
+                websites and products that create real value for the business
+                and users.
+              </p>
+              <p>
+                I enjoy solving problems with clean scalable solutions and I
+                also have a genuine passion for inspiring design.
+              </p>
+              <p>
+                I am a fullstack developer focusing on core frontend and backend
+                technologies which include HTML, CSS, Javascript, React and
+                other core languages
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="full-bleed_primary-light about-section_logos">
+          <h2>Companies I have worked for</h2>
+          <img src="./logos.png" alt="logos" />
+        </div>
+      </section>
+      <section class="work-section full-bleed_primary">
+        <h2>My Recent Works</h2>
+        <ul id="works_list"></ul>
+        <div class="work-section_button">
+          <button class="btn_outline">See More</button>
+        </div>
+      </section>
+      <section class="slider-section full-bleed_primary-light">
+        <h2>What my clients say</h2>
+        <div>
+          <button class="arrow-btn">
+            <img src="./arrow-left.svg" alt="arrow-left" />
+          </button>
+          <div class="slider-cards">
+            <article class="slider-card">
+              <div>
+                <img src="./preview.png" alt="user" />
+                <div>
+                  <h3>Charles Dim</h3>
+                  <span>
+                    Lead Designer, Netflix
+                  </span>
+                </div>
+                <img src="./quote.svg" alt="quote"/>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                tincidunt in malesuada tristique arcu non eu lectus orci. Amet
+                non, sed eget ultrices cursus diam orci. Risus sed tristique
+                lectus fusce lacus.
+              </p>
+            </article>
+            <article class="slider-card">
+              <div>
+                <img src="./preview.png" alt="user" />
+                <div>
+                  <h3>Margeret Wills</h3>
+                  <span>
+                    CEO, Ebay
+                  </span>
+                </div>
+                <img src="./quote.svg" alt="quote" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                tincidunt in malesuada tristique arcu non eu lectus orci. Amet
+                non, sed eget ultrices cursus diam orci. Risus sed tristique
+                lectus fusce lacus.
+              </p>
+            </article>
+          </div>
+          <button class="arrow-btn"><img src="./arrow-right.svg" alt="arrow-right" /></button>
+        </div>
+        <div class="nav-dots">
+          <button class="nav-dots_button active"></button>
+          <button class="nav-dots_button"></button>
+          <button class="nav-dots_button"></button>
+          <button class="nav-dots_button"></button>
+        </div>
+      </section>
+      <section class="contact-section full-bleed_secondary">
+        <h2>Tell me about your project</h2>
+        <form id="contact_from">
+          <div class="from-content">
+            <input id="name" type="text" placeholder="Name" />
+            <input id="email" type="email" placeholder="Email Address" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message description"
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="footer-content full-bleed_primary">
+        <span class="logo">IWMYWF</span>
+        <p>© Copyright 2021. All right reserved</p>
+        <div class="footer-content_socials">
+          <p>Connect with me:</p>
+          <div class="list">
+            <a href="/">
+              <img src="/facebook.svg" alt="facebook" />
+            </a>
+            <a href="/">
+              <img src="/twitter.svg" alt="twitter" />
+            </a>
+            <a href="/">
+              <img src="/github.svg" alt="github" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>
