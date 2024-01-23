@@ -1,0 +1,83 @@
+:root {
+  --primaty: #6182a2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  height: 100%;
+  flex: 1 1 0;
+  padding: 1rem;
+}
+
+.sidebar {
+  padding: 1rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primaty);
+  transition: all 300ms ease-in-out;
+}
+
+.open {
+  width: 12rem;
+}
+
+.sidebar .navbar-list {
+}
+
+.sidebar .navbar-list li {
+  position: relative;
+  margin-top: 0.5rem;
+  height: 3rem;
+}
+
+.sidebar .navbar-list li svg {
+  min-width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.sidebar .navbar-list li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  gap: 1rem;
+}
+
+.sidebar .navbar-list li a:hover {
+  background-color: rgb(119, 100, 100);
+}
+
+.sidebar .navbar-list li a .link-text {
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 400ms;
+}
+
+.sidebar.open .navbar-list li a .link-text {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
